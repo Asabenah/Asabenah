@@ -9,24 +9,33 @@ import ReactDOM from "react-dom";
 
 function App() {
 
- const date = new Date()
+ const date = new Date(2021, 11, 6, 10)
  const hours = date.getHours()
  let timeOfDay
 
- if (hours == 12) {
+ const styles = {
+  fontSize: 30
+}
+
+ if (hours < 12) {
    timeOfDay = "morning"
+   styles.color = "Red"
  }
 
  else if (hours >= 12 && hours <17){
    timeOfDay = "afternoon"
+   styles.color = "Green"
  }
  else{
    timeOfDay = "night"
+   styles.color = "Black"
  }
+
+ 
 
   return (
     <div>
-      <h1>Good {timeOfDay } </h1>
+      <h1 style= {styles }>Good {timeOfDay } </h1>
       <Header/>
       <MainContent/>
      <Footer/>
