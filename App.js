@@ -1,46 +1,22 @@
-import './App.css';
 import React from "react";
-//import Info from "./Components/Info";
-//import Footer from "./Components/Footer"
-//import Header from "./Components/Header"
-//import MainContent from './Components/MainContent';
-import Checkbox from './Components/Checkbox';
-//import TodoItem from './TodoItem';
-import ReactDOM from "react-dom";
-
-function App() {
+import Joke from "./Components/Joke"
+import ReactDOM from "react-dom"
 
 
+function App () {
 
- 
 
   return (
-    <div className = "contacts">
-      
-      <Checkbox 
-      contact = {{name:"Md Touhidul Islam" ,
-      imgUrl: "http://placekitten.com/300/200" ,
-      phone:"38448372789393",
-       email: "mdtouhidul.islam@tuni.fi"}} />
 
-<Checkbox contact = {{name:"Md Touhidul Islam" ,
-imgUrl: "http://placekitten.com/300/200" ,
-phone:"38448372789393",
- email: "mdtouhidul.islam@tuni.fi"}}/>
 
-<Checkbox contact = {{name:"Md Touhidul Islam" ,
-imgUrl: "http://placekitten.com/300/200" ,
-phone:"38448372789393",
- email: "mdtouhidul.islam@tuni.fi"}}/>
-
-<Checkbox contact = {{name:"Md Touhidul Islam" ,
-imgUrl: "http://placekitten.com/300/200" ,
-phone:"38448372789393",
- email: "mdtouhidul.islam@tuni.fi"}}/>
+    <div>
+<Joke joke = {{question: "Where do you live", punchLine: "I don't know" }}/>
+<Joke joke = {{question: "Where do you live", punchLine: "I don't know" }}/>
+<Joke joke = {{question: "Where do you live", punchLine: "I don't know" }}/>
+<Joke joke = {{question: "Where do you live", punchLine: "I don't know" }}/>
+<Joke joke = {{question: "Where do you live", punchLine: "I don't know" }}/>
     </div>
-     
-    
-  );
+  )
 }
 
 export default App;
