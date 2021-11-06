@@ -4,8 +4,9 @@ import ReactDOM from "react-dom"
 function Joke(props) {
 return (
     <div>
-        <h1 style={{display: props.question && "none"}}> Question: {props.joke.question}</h1>
-        <h2 style= {{color: !props.question && "green"}}>Ans: {props.joke.punchLine}</h2>
+        <h1 > name: {props.name}</h1>
+        <h2 >price: {props.price}</h2>
+        <h2 >description: {props.description}</h2>
     </div>
 )
 }
